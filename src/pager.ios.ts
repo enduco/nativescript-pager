@@ -232,8 +232,9 @@ export class Pager extends PagerBase {
 
                 break;
         }
-        this._indicatorView.tintColor = UIColor.whiteColor;
-        this._indicatorView.currentPageTintColor = UIColor.whiteColor;
+        this._indicatorView.radius = 4;
+        this._indicatorView.tintColor = UIColor.systemGray4Color;
+        this._indicatorView.currentPageTintColor = UIColor.systemGray2Color;
     }
 
     public get _childrenCount() {

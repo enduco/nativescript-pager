@@ -1,6 +1,6 @@
 {
-  "name": "nativescript-pager",
-  "version": "12.0.0-alpha.8",
+  "name": "nativescript-pager-enduco",
+  "version": "1.0.0",
   "description": "A Carousel/Pager plugin for NativeScript",
   "main": "pager",
   "typings": "pager.d.ts",
@@ -55,21 +55,25 @@
     "nativescript-vue"
   ],
   "author": {
-    "name": "Osei Fortune",
-    "email": "fortune.osei@yahoo.com"
+    "name": "enduco",
+    "email": "hello@enduco.app"
   },
   "contributors": [
     {
       "name": "Shiva Prasad",
       "email": "sp@shiv19.com",
       "url": "https://shiv19.com"
+    },
+    {
+      "name": "enduco",
+      "email": "hello@enduco.app"
     }
   ],
   "bugs": {
-    "url": "https://github.com/triniwiz/nativescript-pager/issues"
+    "url": "https://github.com/enduco/nativescript-pager/issues"
   },
   "license": "Apache-2.0",
-  "homepage": "https://github.com/triniwiz/nativescript-pager",
+  "homepage": "https://github.com/enduco/nativescript-pager",
   "readmeFilename": "README.md",
   "devDependencies": {
     "@angular/common": "~8.2.0",

@@ -8,7 +8,7 @@ import {
     NO_ERRORS_SCHEMA
 } from '@angular/core';
 
-import { Pager } from '@nativescript-community/ui-pager';
+import { Pager } from '@enduco/ui-pager';
 import {
     PagerItemDirective,
     TEMPLATED_ITEMS_COMPONENT,

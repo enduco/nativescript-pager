@@ -6,7 +6,7 @@
     "umdModuleIds": {
       "@nativescript/core": "ns-core",
       "@nativescript/angular": "ns-angular",
-      "@nativescript-community/ui-pager": "ns-pager"
+      "@enduco/ui-pager": "enduco-ui-pager"
     }
   },
   "whitelistedNonPeerDependencies": [

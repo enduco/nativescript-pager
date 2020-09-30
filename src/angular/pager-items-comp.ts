@@ -38,7 +38,7 @@ import {
     PagerError,
     PagerItem,
     PagerLog,
-} from "@nativescript-community/ui-pager";
+} from "@enduco/ui-pager";
 
 registerElement("Pager", () => Pager);
 registerElement("PagerItem", () => PagerItem);

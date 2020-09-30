@@ -1,6 +1,6 @@
 import { ApiViewModel } from '~/api/api-view-model';
 import { Page } from '@nativescript/core/ui/page';
-import { Pager } from '@nativescript-community/ui-pager';
+import { Pager } from '@enduco/ui-pager';
 
 let vm = new ApiViewModel();
 let page;

@@ -153,12 +153,13 @@ export class Pager extends PagerBase {
 
         params.addRule(android.widget.RelativeLayout.ALIGN_PARENT_BOTTOM);
         params.addRule(android.widget.RelativeLayout.CENTER_HORIZONTAL);
-        params.setMargins(0, 0, 0, 10 * Screen.mainScreen.scale);
+        params.setMargins(0, 0, 0, 5 * Screen.mainScreen.scale);
         this._indicatorView.setLayoutParams(params);
 
         // this._indicatorView.setViewPager(this.pager);
         this._indicatorView.setDynamicCount(true);
         this._indicatorView.setInteractiveAnimation(true);
+        this._indicatorView.setRadius(3);
         nativeView.addView(this._indicatorView);
         return nativeView;
     }
@@ -265,6 +266,9 @@ export class Pager extends PagerBase {
                 break;
             case Indicator.THIN_WORM:
                 this.indicatorView.setAnimationType(AnimationType.THIN_WORM);
+                break;
+            case Indicator.Flat:
+                this.indicatorView.setAnimationType(AnimationType.WORM);
                 break;
             default:
                 break;

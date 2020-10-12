@@ -1,5 +1,5 @@
 import { View } from '@nativescript/core';
-import {  PagerBase } from './pager.common';
+import {  PagerBase } from "./pager.common";
 
 export { ItemsSource, PagerItem, PagerError, PagerLog } from './pager.common';
 export type Orientation = 'horizontal' | 'vertical';

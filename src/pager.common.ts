@@ -100,6 +100,7 @@ export abstract class PagerBase
     public circularMode: boolean;
     public autoPlayDelay: number;
     public autoPlay: boolean;
+    public radius: number;
     public static selectedIndexChangedEvent = "selectedIndexChanged";
     public static selectedIndexChangeEvent = "selectedIndexChange";
     public static scrollEvent = "scroll";
@@ -555,3 +556,9 @@ export const autoplayDelayProperty = new Property<PagerBase, number>({
     defaultValue: 3000,
 });
 autoplayDelayProperty.register(PagerBase);
+
+export const radiusProperty = new Property<PagerBase, number>({
+    name: "radius",
+    defaultValue: 4,
+});
+radiusProperty.register(PagerBase);

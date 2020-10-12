@@ -6,8 +6,8 @@ import {
     profile,
     ProxyViewContainer,
     StackLayout,
-    View,
-} from "@nativescript/core";
+    View
+} from "@nativescript/core"
 import { KeyedTemplate } from "@nativescript/core/ui/core/view";
 import * as types from "@nativescript/core/utils/types";
 import { layout } from "@nativescript/core/utils/utils";
@@ -28,10 +28,10 @@ import {
     LOADMOREITEMS,
     Orientation,
     orientationProperty,
-    PagerBase,
+    PagerBase, radiusProperty,
     selectedIndexProperty,
-    showIndicatorProperty,
-} from "./pager.common";
+    showIndicatorProperty
+} from "./pager.common"
 
 export * from "./pager.common";
 export { ItemsSource, Transformer } from "./pager.common";
@@ -269,7 +269,7 @@ export class Pager extends PagerBase {
             default:
                 break;
         }
-        this._indicatorView.radius = 4;
+        this._indicatorView.radius = this.radius;
         this._indicatorView.tintColor = UIColor.systemGray4Color;
         this._indicatorView.currentPageTintColor = UIColor.systemGray2Color;
     }
@@ -383,6 +383,12 @@ export class Pager extends PagerBase {
             clearInterval(this._autoPlayInterval);
             this._autoPlayInterval = undefined;
             this._initAutoPlay(this.autoPlay);
+        }
+    }
+
+    [radiusProperty.setNative](value: number) {
+        if (this._indicatorView) {
+            this._indicatorView.radius = value;
         }
     }
 

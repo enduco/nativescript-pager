@@ -19,12 +19,12 @@ import {
     orientationProperty,
     PagerBase,
     PagerItem,
-    peakingProperty,
+    peakingProperty, radiusProperty,
     selectedIndexProperty,
     showIndicatorProperty,
     spacingProperty,
     Transformer
-} from "./pager.common";
+} from "./pager.common"
 
 export * from "./pager.common";
 export { ItemsSource, Transformer } from "./pager.common";
@@ -159,7 +159,7 @@ export class Pager extends PagerBase {
         // this._indicatorView.setViewPager(this.pager);
         this._indicatorView.setDynamicCount(true);
         this._indicatorView.setInteractiveAnimation(true);
-        this._indicatorView.setRadius(3);
+        this._indicatorView.setRadius(this.radius);
         nativeView.addView(this._indicatorView);
         return nativeView;
     }
@@ -660,6 +660,12 @@ export class Pager extends PagerBase {
             clearInterval(this._autoPlayInterval);
             this._autoPlayInterval = undefined;
             this._initAutoPlay(this.autoPlay);
+        }
+    }
+
+    [radiusProperty.setNative](value: number) {
+        if (this._indicatorView) {
+            this._indicatorView.setRadius(value);
         }
     }
 

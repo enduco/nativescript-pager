@@ -6,9 +6,8 @@ import {
     IterableDiffers,
     NgModule,
     NO_ERRORS_SCHEMA
-} from '@angular/core';
+} from "@angular/core";
 
-import { Pager } from '@enduco/ui-pager';
 import {
     PagerItemDirective,
     TEMPLATED_ITEMS_COMPONENT,
@@ -16,7 +15,9 @@ import {
     TemplateKeyDirective
 } from './pager-items-comp';
 
-export {PagerItemDirective, TemplatedItemsComponent, TemplateKeyDirective} from './pager-items-comp';
+import { Pager } from "@enduco/ui-pager";
+
+export * from './pager-items-comp';
 
 @Component({
     selector: 'Pager',
